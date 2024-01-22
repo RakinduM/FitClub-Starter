@@ -10,15 +10,16 @@ import NumberCounter from 'number-counter'
 
 const Hero = () => {
     const transition = {type: 'tween', duration: 3}
+    const mobile = window.innerWidth<=768 ? true : false;
   return (
-    <div className="hero">
+    <div className="hero" id='hero'>
         <div className="blur blur-h"></div>
         <div className="left-h">
             <Header/>
             {/*the best ad */}
             <div className="the-best-ad">
                 <motion.div
-                initial={{left: '238px'}}
+                initial={{left: mobile ? '170px' : '238px'}}
                 whileInView={{left: '8px'}}
                 transition={transition}
                 ></motion.div>
