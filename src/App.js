@@ -17,6 +17,7 @@ function App() {
           <Join />
           <Footer />
     </div>
+    
   );
 }
 
